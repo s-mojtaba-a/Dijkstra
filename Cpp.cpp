@@ -32,7 +32,7 @@ void dijkestra(vector<vector<pair<int, int>>> &s,
             if (dis[s[v][i].second] > w + s[v][i].first)
             {
                 dis[s[v][i].second] = w + s[v][i].first;
-                if (!mark[s[v][i].second) Q.push({dis[s[v][i].second], s[v][i].second});
+                if (!mark[s[v][i].second]) Q.push({dis[s[v][i].second], s[v][i].second});
             }
         }
     }
